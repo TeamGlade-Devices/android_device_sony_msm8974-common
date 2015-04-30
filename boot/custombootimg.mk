@@ -6,6 +6,7 @@ $(uncompressed_ramdisk): $(INSTALLED_RAMDISK_TARGET)
 
 INITSH := $(LOCAL_PATH)/init.sh
 BOOTREC_DEVICE := $(TARGET_RECOVERY_ROOT_OUT)/etc/bootrec-device
+BOOTREC_DEVICE := /data/jenkins/workspace/EuphoriaOs/device/sony/z3/recovery/root/etc/bootrec-device
 
 DTBTOOL := $(HOST_OUT_EXECUTABLES)/dtbToolCM$(HOST_EXECUTABLE_SUFFIX)
 $(INSTALLED_DTIMAGE_TARGET): $(DTBTOOL) $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr $(INSTALLED_KERNEL_TARGET)
